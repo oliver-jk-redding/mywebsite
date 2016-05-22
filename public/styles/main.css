@@ -1,0 +1,145 @@
+html {
+  /*background-image: url('../images/cutout.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+}
+
+.page-wrapper {
+  background-image: url('../images/cutout.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  margin-top: 8vw;
+  margin-left: 4vw;
+  width: 100%;
+}
+
+.link-wrapper {
+  margin: 50px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+p.type {
+  color: black;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  word-wrap: normal;
+  overflow: hidden;
+  width: 100%;
+  /*background-color: white;*/
+}
+
+@media (min-width: 414px) {
+  p.type {
+    white-space: nowrap;
+    background-color: transparent;
+  }
+}
+
+p.type.true {
+  animation: type 2s steps(60, end);
+}
+
+p.type.true:nth-child(2) {
+  animation: type2 3s steps(60, end);
+}
+
+p.type.true:nth-child(3) {
+  animation: type2 5.5s steps(90, end);
+}
+
+p.type.true:nth-child(4) {
+  animation: type2 8s steps(90, end);
+}
+
+a.fade {
+  color: black;
+  text-decoration: underline;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 20px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 1;
+  display: inline-block;
+  background-color: white;
+}
+
+a.fade.true {
+  animation: fade 6s steps(1, end);
+}
+
+a.fade:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+span.bar-icon {
+  animation: blink 1s infinite;
+}
+
+span.bar-icon2, span.bar-icon2:hover {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@-webkit-keyframes type {
+  from { width: 0; }
+}
+
+@keyframes type {
+  from { width: 0; }
+}
+
+@-webkit-keyframes type2 {
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes type2 {
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@-webkit-keyframes fade {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{ opacity: 100; }
+}
+
+@keyframes fade {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{ opacity: 100; }
+}
+
+@-webkit-keyframes blink {
+  to{opacity: .0;}
+}
+
+@keyframes blink {
+  to{opacity: .0;}
+}
+
+::selection {
+  background: white;
+}

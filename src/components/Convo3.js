@@ -4,7 +4,7 @@ import {Link, browserHistory} from 'react-router'
 
 import {} from '../utils/index'
 
-class Home extends Component {
+class Convo1 extends Component {
 
   constructor() {
     super()
@@ -88,6 +88,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     setIntroRendered: (introIsRendered) => {
+      console.log('INTROISRENDERED: ', introIsRendered)
       dispatch({
         type: 'SET_INTRO_RENDERED',
         setIntroRendered: introIsRendered
@@ -96,4 +97,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Convo1)

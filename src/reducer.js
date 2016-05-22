@@ -1,11 +1,13 @@
 import {fromJS} from 'immutable'
 
 const INITIAL_STATE = fromJS({
-  title: 'oliver-jk-redding'
+  introIsRendered: false
 })
 
 export default (state = INITIAL_STATE, action) => {
   switch(action.type) {
+    case 'SET_INTRO_RENDERED':
+      return state.set('introIsRendered', fromJS(action.setIntroRendered))
     default:
       return state
   }
