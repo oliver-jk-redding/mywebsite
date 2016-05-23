@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {Link, browserHistory} from 'react-router'
 
 class Convo2 extends Component {
 
@@ -12,7 +11,7 @@ class Convo2 extends Component {
             <p className={this.props.introIsRendered ? 'type' : 'type true'}>awesome!</p>
             <p className={this.props.introIsRendered ? 'type' : 'type true'}>are you into web development?<span className='bar-icon'>|</span></p>
             <div className='link-wrapper'>
-              <a className={this.props.introIsRendered ? 'fade' : 'fade two true'} onClick={this.props.setNextConvo.bind(this)}>why yes!</a>
+              <a className={this.props.introIsRendered ? 'fade' : 'fade two true'} onClick={this.props.setNextConvo.bind(this)}>why, yes!</a>
               <a className={this.props.introIsRendered ? 'fade icon' : 'fade two true icon'}><span className='bar-icon2'>||</span></a>
               <a className={this.props.introIsRendered ? 'fade' : 'fade two true'} onClick={this.props.setNextConvo.bind(this)}>nope</a>
             </div>
@@ -37,15 +36,4 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    setIntroRendered: (introIsRendered) => {
-      dispatch({
-        type: 'SET_INTRO_RENDERED',
-        setIntroRendered: introIsRendered
-      })
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Convo2)
+export default connect(mapStateToProps)(Convo2)

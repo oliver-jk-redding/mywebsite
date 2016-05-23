@@ -1,10 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {Link, browserHistory} from 'react-router'
 
 class Convo1 extends Component {
-
-  // href="mailto:oliver.jk.redding@gmail.com?" target="_top"
 
   render() {
     return (
@@ -29,15 +26,4 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    setIntroRendered: (introIsRendered) => {
-      dispatch({
-        type: 'SET_INTRO_RENDERED',
-        setIntroRendered: introIsRendered
-      })
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Convo1)
+export default connect(mapStateToProps)(Convo1)

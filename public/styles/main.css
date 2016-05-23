@@ -39,13 +39,13 @@ a:any-link {
   text-decoration: none;
 }
   a:-moz-any-link {
-  color: black;
-  text-decoration: none;
-}
-a:-webkit-any-link {
-  color: black;
-  text-decoration: none;
-}
+    color: black;
+    text-decoration: none;
+  }
+  a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+  }
 
 .heading-container {
   position: fixed;

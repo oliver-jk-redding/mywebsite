@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Link, browserHistory} from 'react-router'
 
-import {} from '../utils/index'
+import {clickHandler} from '../utils/index'
 import Convo1 from './Convo1'
 import Convo2 from './Convo2'
 import Convo3 from './Convo3'
@@ -39,26 +39,7 @@ class Home extends Component {
 
   setNextConvo(e) {
     e.preventDefault
-    switch(e.target.text) {
-      case 'definitely!':
-        this.setState({convoNum: '2a'})
-        break
-      case 'i prefer other things':
-        this.setState({convoNum: '2b'})
-        break
-      case 'why yes!':
-        this.setState({convoNum: '3a'})
-        break
-      case 'nope':
-        this.setState({convoNum: '3b'})
-        break
-      case 'sure!':
-        this.setState({convoNum: '4'})
-        break
-      case 'will do!':
-        this.setState({convoNum: '4'})
-        break
-    }
+    this.setState({convoNum: clickHandler(e.target.text)})
   }
 
   getConvo() {
@@ -83,15 +64,4 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    setIntroRendered: (introIsRendered) => {
-      dispatch({
-        type: 'SET_INTRO_RENDERED',
-        setIntroRendered: introIsRendered
-      })
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps)(Home)

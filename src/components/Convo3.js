@@ -1,14 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {Link, browserHistory} from 'react-router'
 
 class Convo3 extends Component {
-
-  setIntroRendered(e) {
-    e.preventDefault()
-    this.props.setIntroRendered(true)
-    browserHistory.push('/resume')
-  }
 
   render() {
     return (
@@ -20,7 +13,7 @@ class Convo3 extends Component {
             <div className='link-wrapper'>
                 <a className={this.props.introIsRendered ? 'fade' : 'fade two true'} href="mailto:oliver.jk.redding@gmail.com?" target="_top" onClick={this.props.setNextConvo.bind(this)}>sure!</a>
                 <a className={this.props.introIsRendered ? 'fade icon' : 'fade two true icon'}><span className='bar-icon2'>||</span></a>
-                <a className={this.props.introIsRendered ? 'fade' : 'fade two true'}>not just yet thanks</a>
+                <a className={this.props.introIsRendered ? 'fade' : 'fade two true'} onClick={this.props.setNextConvo.bind(this)}>not right now thanks</a>
               </div>
           </div>
         :
@@ -44,15 +37,4 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    setIntroRendered: (introIsRendered) => {
-      dispatch({
-        type: 'SET_INTRO_RENDERED',
-        setIntroRendered: introIsRendered
-      })
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Convo3)
+export default connect(mapStateToProps)(Convo3)

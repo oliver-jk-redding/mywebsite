@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {Link, browserHistory} from 'react-router'
+import {browserHistory} from 'react-router'
 
 class Menu extends Component {
 
@@ -18,9 +18,9 @@ class Menu extends Component {
       <div>
         <div className='heading-container'><h1 className='animated bounceInLeft'>oliver redding - web developer</h1></div>
         <ul className='nav-links'>
-          <li className='animated bounceInRight'><a href="../../public/files/CV_ORedding_webdev.pdf" download>resum&eacute;</a></li>
+          <li className='animated bounceInRight'><a href="../../public/files/CV_ORedding_webdev.pdf" target="_blank">resum&eacute;</a></li>
           <li className='animated bounceInRight'><a href="mailto:oliver.jk.redding@gmail.com?" target="_top" >contact</a></li>
-          <li className='animated bounceInRight'><a>projects</a></li>
+          <li className='animated bounceInRight'><a href="https://github.com/oliver-jk-redding" target="_blank">projects</a></li>
         </ul>
       </div>
     )
