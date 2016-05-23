@@ -1,0 +1,96 @@
+.page-wrapper {
+  background-image: url('../images/cutout.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav-links {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Impact, Charcoal, sans-serif;
+  list-style: none;
+  cursor: pointer;
+  margin:  10vh auto;
+  width: 250px;
+  padding: 0;
+  text-align: center;
+  padding-right: 8vw;
+}
+  @media (min-width: 420px) {
+    .nav-links {
+      font-size: 60px;
+      width: 350px;
+    }
+  }
+  .nav-links a:hover {
+    color: blue;
+  }
+
+a:any-link {
+  color: black;
+  text-decoration: none;
+}
+  a:-moz-any-link {
+    color: black;
+    text-decoration: none;
+  }
+  a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+  }
+
+.heading-container {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  background-color: black;
+  color: white;
+  padding: 5px 0px;
+}
+  @media (min-width: 770px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+
+.content-wrapper {
+  margin-top: 8vw;
+  margin-left: 8vw;
+  width: 90%;
+}
+  @media (min-width: 780px) {
+    .content-wrapper {
+      margin-top: 30vh;
+      margin-left: 70vh;
+      width: 500px;
+    }
+    .nav-links {
+      text-align: left;
+    }
+    h1 {
+      text-align: left;
+      padding: 10px 18vh;
+    }
+  }
+
+.link-wrapper {
+  margin: 30px 0;
+}
