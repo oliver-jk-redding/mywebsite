@@ -1,8 +1,23 @@
-.page-wrapper {
+.landing-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  z-index: -1;
+}
+
+.image-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
   background-image: url('../images/cutout.png');
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
+}
+
+.page-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -53,6 +68,7 @@ a:any-link {
   left: 0;
   right: 0;
   width: 100%;
+  z-index: -2;
 }
 
 h1 {
@@ -63,6 +79,7 @@ h1 {
   background-color: black;
   color: white;
   padding: 5px 0px;
+  z-index: -2;
 }
   @media (min-width: 770px) {
     h1 {
