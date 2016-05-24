@@ -13,10 +13,13 @@ class Menu extends Component {
     }
   }
 
+  componentWillMount() {
+    this.props.setIntroRendered(true)
+  }
+
   render() {
     return (
       <div>
-        <div className='heading-container'><h1 className='animated bounceInLeft'>oliver redding - web developer</h1></div>
         <ul className='nav-links'>
           <li className='animated bounceInRight'><a href="https://www.dropbox.com/home?preview=CV_ORedding_webdev.pdf" target="_blank">resum&eacute;</a></li>
           <li className='animated bounceInRight'><a href="mailto:oliver.jk.redding@gmail.com?" target="_top" >contact</a></li>
