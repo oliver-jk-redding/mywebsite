@@ -9,6 +9,10 @@
   background-size: contain;
 }
 
+.hidden {
+  display: none;
+}
+
 .page-wrapper {
   position: fixed;
   top: 0;
