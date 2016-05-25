@@ -19,9 +19,9 @@ class App extends Component {
   render () {
     return (
       <div>
+        {this.state.imageHasRendered ? <Home/> : <img src='../../public/images/hex-loader2.gif'/>}
         {this.props.introIsRendered ? <div className='heading-container'><h1 className='animated bounceInLeft'>oliver redding - web developer</h1></div> : null}
         <div className='image-container'></div>
-        {this.state.imageHasRendered ? <Home/> : <p>waiting</p>}
       </div>
     )
   }
