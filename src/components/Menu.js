@@ -21,7 +21,7 @@ class Menu extends Component {
     return (
       <div>
         <ul className='nav-links'>
-          <li className='animated bounceInRight'><a href="https://www.dropbox.com/home?preview=CV_ORedding_webdev.pdf" target="_blank">resum&eacute;</a></li>
+          <li className='animated bounceInRight'><a href="https://www.dropbox.com/s/bea874ruigh55fb/CV_ORedding_webdev.pdf?dl=0" target="_blank">resum&eacute;</a></li>
           <li className='animated bounceInRight'><a href="mailto:oliver.jk.redding@gmail.com?" target="_top" >contact</a></li>
           <li className='animated bounceInRight'><a href="https://github.com/oliver-jk-redding" target="_blank">projects</a></li>
         </ul>
