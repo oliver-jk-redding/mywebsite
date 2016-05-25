@@ -73,6 +73,9 @@ span.bar-icon2, span.bar-icon2:hover {
   @-webkit-keyframes type {
     from { width: 0; }
   }
+   @-moz-keyframes type {
+    from { width: 0; }
+  }
 
 @keyframes type2 {
   0%{width: 0;}
@@ -80,6 +83,11 @@ span.bar-icon2, span.bar-icon2:hover {
   100%{ width: 100; }
 }
   @-webkit-keyframes type2 {
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; }
+  }
+  @-moz-keyframes type2 {
     0%{width: 0;}
     50%{width: 0;}
     100%{ width: 100; }
@@ -95,11 +103,20 @@ span.bar-icon2, span.bar-icon2:hover {
     50%{width: 0; opacity: 0;}
     100%{width: 100; opacity: 100;}
   }
+  @-moz-keyframes fade {
+    0%{width: 0; opacity: 0;}
+    50%{width: 0; opacity: 0;}
+    100%{width: 100; opacity: 100;}
+  }
+
 
 @keyframes blink {
   to{opacity: .0;}
 }
   @-webkit-keyframes blink {
+    to{opacity: .0;}
+  }
+  @-moz-keyframes blink {
     to{opacity: .0;}
   }
 
