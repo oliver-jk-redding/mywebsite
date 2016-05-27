@@ -13,12 +13,10 @@ class App extends Component {
   }
 
   handleImageLoaded() {
-    console.log('loaded')
     this.setState({imageStatus: <Home/>})
   }
 
   handleImageErrored() {
-    console.log('not loaded')
     this.setState({imageStatus: <Home/>});
   }
 
