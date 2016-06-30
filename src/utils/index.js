@@ -21,7 +21,7 @@ export const clickHandler = (text) => {
     case 'will do!':
       return '4'
       break
-    case 'skip':
+    case '[skip]':
       return '4'
       break
   }
