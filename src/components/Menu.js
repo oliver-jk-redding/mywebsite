@@ -21,9 +21,10 @@ class Menu extends Component {
     return (
       <div>
         <ul className='nav-links'>
-          <li className='animated bounceInRight'><a href="https://www.dropbox.com/s/bea874ruigh55fb/CV_ORedding_webdev.pdf?dl=0" target="_blank">resum&eacute;</a></li>
+          <li className='animated bounceInRight'><a href="https://drive.google.com/file/d/0B9wW8F6aIlX_YjByZjRQeUgxUDA/view?usp=sharing" target="_blank">resum&eacute;</a></li>
           <li className='animated bounceInRight'><a href="mailto:oliver.jk.redding@gmail.com" target="_top" >contact</a></li>
           <li className='animated bounceInRight'><a href="https://github.com/oliver-jk-redding" target="_blank">github</a></li>
+          <li className='animated bounceInRight'><a href="http://blog.oliverredding.com" target="_blank">blog</a></li>
         </ul>
       </div>
     )
