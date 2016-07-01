@@ -51,6 +51,7 @@ class Home extends Component {
       <div className='page-wrapper'>
         <div className='content-wrapper'>
           {this.props.introIsRendered ? <Menu/> : this.getConvo()}
+          {this.props.introIsRendered ? null : <a id="skip" className="fade" onClick={this.setNextConvo.bind(this)}>[skip]</a>}
         </div>
       </div>
     )
